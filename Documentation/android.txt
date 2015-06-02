@@ -21,11 +21,14 @@ CONTENTS:
 Android (www.android.com) is an open source operating system for mobile devices.
 This document describes configurations needed to run the Android framework on
 top of the Linux kernel.
+안드로이드(www.android.com)는 모바일 기기 용 오픈소스 운영 체제다. 이 문서는
+리눅스 커널 위에서 안드로이드 프레임워크를 실행하는데 필요한 설정에 대해 설명한다.
 
 To see a working defconfig look at msm_defconfig or goldfish_defconfig
 which can be found at http://android.git.kernel.org in kernel/common.git
 and kernel/msm.git
-
+사용중인 defconfig를 보려면 http://android.git.kernel.org 의 kernel/common.git과
+kernel/msm.git에서 찾을 수 있는 msm_defconfig 또는 goldfish_defconfig를 참조하시오.
 
 1.1 Required enabled config options
 -----------------------------------
@@ -33,6 +36,9 @@ After building a standard defconfig, ensure that these options are enabled in
 your .config or defconfig if they are not already. Based off the msm_defconfig.
 You should keep the rest of the default options enabled in the defconfig
 unless you know what you are doing.
+표준 defconfig를 구축한 후, 아래 옵션들이 당신의 .config 또는 defconfig에 활성화
+되어 있는지 확인하라. msm_defconfig 기반으로. 잘알지 못한다면 defconfig에 활성화
+되어있는 나머지 기본 옵션들은 활성화 상태로 유지하라.
 
 ANDROID_PARANOID_NETWORK
 ASHMEM
